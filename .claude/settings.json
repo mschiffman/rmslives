@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Move-Item -Path \"c:\\\\Users\\\\Owner\\\\Desktop\\\\MAIN\\\\WEBSITE\\\\My Website\\\\rmslives\\\\img\" -Destination \"c:\\\\Users\\\\Owner\\\\Desktop\\\\MAIN\\\\WEBSITE\\\\My Website\\\\rmslives\\\\public\\\\img\")",
+      "PowerShell(Move-Item -Path \"c:\\\\Users\\\\Owner\\\\Desktop\\\\MAIN\\\\WEBSITE\\\\My Website\\\\rmslives\\\\public\\\\img\" -Destination \"c:\\\\Users\\\\Owner\\\\Desktop\\\\MAIN\\\\WEBSITE\\\\My Website\\\\rmslives\\\\img\")",
+      "Bash(Select-String \"vendor\")",
+      "PowerShell(ls \"c:\\\\Users\\\\Owner\\\\Desktop\\\\MAIN\\\\WEBSITE\\\\My Website\\\\rmslives\" | Where-Object { $_.Name -match \"vendor|img\" })",
+      "Bash(mkdir \"c:\\\\Users\\\\Owner\\\\Desktop\\\\MAIN\\\\WEBSITE\\\\My Website\\\\rmslives\\\\.vscode\" 2>/dev/null; echo \"done\")"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\Owner\\Desktop\\MAIN\\WEBSITE\\My Website\\rmslives"
+    ]
+  }
+}
